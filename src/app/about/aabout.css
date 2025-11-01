@@ -1,0 +1,302 @@
+/* Base / Desktop */
+.about-section {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 60px 20px;
+
+  background-image: url('https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: -1;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  z-index: 1;
+}
+
+.ubaid-about-logo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid rgb(0,225,250);
+  box-shadow: 0 0 15px 5px rgb(0,225,250);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.ubaid-about-logo:hover {
+  transform: scale(1.05);
+}
+
+.about-h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+}
+
+.about-span {
+  color: rgb(0, 225, 250);
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: white;
+  text-align: justify;
+  max-width: 580px;
+}
+
+.about-button {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+}
+
+button.learn-more {
+  width: 12rem;
+  padding: 12px 0;
+  font-size: 1rem;
+  background-color: rgb(0,225,250);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button.learn-more:hover {
+  background-color: #ff6b6b;
+  transform: translateY(-2px);
+}
+
+/* Tablet / Medium Screens */
+@media (max-width: 1024px) {
+  .about-content {
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+  }
+
+  .about-h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .ubaid-about-logo {
+    width: 250px;
+    height: 250px;
+  }
+
+  button.learn-more {
+    width: 10rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile / Small Screens */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 30px 10px;
+    min-height: auto;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .ubaid-about-logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .about-h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .about-content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 85%;
+  }
+
+  .about-button {
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  button.learn-more {
+    width: 60%;
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
+}
+/* Base / Desktop */
+.about-section {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 60px 20px;
+
+  background-image: url('https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: -1;
+}
+
+/* Mobile / Small Screens */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 30px 10px;
+    min-height: 100vh;  /* Full viewport height */
+    background-size: cover; /* Ensure it covers full section */
+    background-position: top center; /* Align from top so main part shows */
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .ubaid-about-logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .about-h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .about-content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 85%;
+  }
+
+  .about-button {
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  button.learn-more {
+    width: 60%;
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
+}
+
+/* Mobile / Small Screens */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 40px 15px;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-content {
+    flex-direction: column;       /* Image above text */
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    max-width: 95%;               /* Fits mobile screen */
+  }
+
+  .ubaid-about-logo {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 15px;
+  }
+
+  .about-h2 {
+    font-size: 1.8rem;            /* readable heading */
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .about-span {
+    color: rgb(0, 225, 250);
+  }
+
+  .about-content p {
+    font-size: 1rem;              /* readable body text */
+    line-height: 1.6;             /* spacing between lines */
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+    word-wrap: break-word;
+  }
+
+  .about-button {
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  button.learn-more {
+    width: 65%;
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+}
+

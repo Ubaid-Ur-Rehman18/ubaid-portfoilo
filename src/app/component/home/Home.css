@@ -1,0 +1,315 @@
+/* Main container and background */
+.home-main-page {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  text-align: center;
+  background-image: url('https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.home-main-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+/* Header / Navigation */
+.heading-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio-div {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00bfff;
+}
+
+.navbar-div ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.navbar-div ul li {
+  border: 2px solid rgba(0, 179, 192, 0.616);
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.navbar-div ul li:hover {
+  box-shadow: 0 0 15px 2px rgb(0, 225, 250);
+  transform: translateY(-2px);
+}
+
+.navbar-div ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Mid-section: Text + Logo */
+.mid-div {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+.hello-div {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #00e5ff;
+}
+
+.name-div {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.skills-div {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.skills-div .auto-type {
+  color: #00bfff;
+  font-weight: bold;
+}
+
+.intro-div {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  text-align: justify;
+}
+
+/* Logo / Image */
+.ubaid-logo {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.ubaid-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons */
+#animated-button, .learn-more {
+  background-color: #00bfff;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#animated-button:hover, .learn-more:hover {
+  background-color: #ff6b6b;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Social icons */
+.logo-section a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.logo-section a img:hover {
+  transform: scale(1.2);
+}
+
+/* Tablet / Small Screen */
+@media (max-width: 768px) {
+  .mid-div {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .hello-div, .name-div, .skills-div {
+    font-size: 2rem;
+  }
+
+  .intro-div {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .ubaid-logo {
+    width: 300px;
+    height: 300px;
+  }
+
+  .navbar-div ul {
+    gap: 10px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .heading-div {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar-div ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hello-div, .name-div, .skills-div {
+    font-size: 1.5rem;
+  }
+
+  .intro-div {
+    font-size: 0.95rem;
+  }
+
+  .ubaid-logo {
+    width: 250px;
+    height: 250px;
+  }
+}
+/* Mid-section: Text + Logo */
+.mid-div {
+  display: flex;
+  flex-direction: row; /* desktop: side by side */
+  gap: 50px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Text container */
+.main-div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+/* Intro text */
+.intro-div {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Logo / Image */
+.ubaid-logo {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.ubaid-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Tablet / Small Screens */
+@media (max-width: 768px) {
+  .mid-div {
+    flex-direction: column; /* stack image on top, text below */
+    gap: 25px;
+    align-items: center;
+  }
+
+  .intro-div {
+    max-width: 90%;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .ubaid-logo {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .mid-div {
+    flex-direction: column; /* image above, text below */
+    gap: 20px;
+    align-items: center;
+  }
+
+  .hello-div, .name-div, .skills-div {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .intro-div {
+    max-width: 95%;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .ubaid-logo {
+    width: 250px;
+    height: 250px;
+  }
+}
+
